@@ -1,0 +1,365 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 8 17
+Title "CANnect Reader | ESD Protection"
+Date "2020-11-29"
+Rev "0.0.05"
+Comp "CANtech"
+Comment1 "Created by Choong Jin Ng | jin8383@gmail.com"
+Comment2 ""
+Comment3 "Taken from STN21xx's datasheet for recommended configuration"
+Comment4 "Component Identifier: ESD"
+$EndDescr
+$Comp
+L PESD2CAN_215:PESD2CAN,215 D_ESD_?
+U 1 1 5FA8DC3D
+P 4050 3450
+AR Path="/5F95F80B/5FAEE035/5FA8DC3D" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA8DC3D" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FA26E74/5FA8DC3D" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA8DC3D" Ref="D_ESD_2"  Part="1" 
+F 0 "D_ESD_2" V 4004 3680 50  0000 L CNN
+F 1 "PESD2CAN,215" V 4095 3680 50  0000 L CNN
+F 2 "footprints:SOT95P230X110-3N" H 4050 3450 50  0001 L BNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 4050 3450 50  0001 L BNN
+F 4 "PESD2CAN,215" H 4050 3450 50  0001 C CNN "Part Name"
+F 5 "DigiKey Canada" H 4050 3450 50  0001 C CNN "Vendor"
+F 6 "Nexperia USA Inc." H 4050 3450 50  0001 C CNN "Manufacturer"
+F 7 "1727-3891-1-ND" H 4050 3450 50  0001 C CNN "digikeypn"
+	1    4050 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA2A19D
+P 4050 4300
+AR Path="/5F95F80B/5FAEE035/5FA2A19D" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA2A19D" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA2A19D" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA2A19D" Ref="#PWR076"  Part="1" 
+F 0 "#PWR076" H 4050 4050 50  0001 C CNN
+F 1 "GND" H 4055 4127 50  0000 C CNN
+F 2 "" H 4050 4300 50  0001 C CNN
+F 3 "" H 4050 4300 50  0001 C CNN
+	1    4050 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3850 4050 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5FA8DC40
+P 6350 4300
+AR Path="/5F95F80B/5FB3FEAD/5FA8DC40" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA8DC40" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA8DC40" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA8DC40" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 6350 4050 50  0001 C CNN
+F 1 "GND" H 6355 4127 50  0000 C CNN
+F 2 "" H 6350 4300 50  0001 C CNN
+F 3 "" H 6350 4300 50  0001 C CNN
+	1    6350 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3750 6350 4300
+Wire Wire Line
+	7350 3750 7350 4300
+Text Notes 4050 4700 0    50   ~ 0
+ESD Protection (IEC61000-4-2 Level 4)
+$Comp
+L power:GND #PWR?
+U 1 1 5FA8DC41
+P 7350 4300
+AR Path="/5F95F80B/5FA83833/5FA8DC41" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA8DC41" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA8DC41" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA8DC41" Ref="#PWR083"  Part="1" 
+F 0 "#PWR083" H 7350 4050 50  0001 C CNN
+F 1 "GND" H 7355 4127 50  0000 C CNN
+F 2 "" H 7350 4300 50  0001 C CNN
+F 3 "" H 7350 4300 50  0001 C CNN
+	1    7350 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5050 3750
+Text HLabel 2550 1950 0    50   BiDi ~ 0
+HS_CAN_High
+Text HLabel 2550 2050 0    50   BiDi ~ 0
+HS_CAN_Low
+Text HLabel 2550 2150 0    50   BiDi ~ 0
+MS_CAN_High
+Text HLabel 2550 2250 0    50   BiDi ~ 0
+MS_CAN_Low
+Text HLabel 2550 2350 0    50   BiDi ~ 0
+SW_CAN
+Text HLabel 2550 2450 0    50   BiDi ~ 0
+K-Line
+Text HLabel 2550 2550 0    50   BiDi ~ 0
+L-Line
+Text HLabel 2550 2650 0    50   BiDi ~ 0
+J1850_BUS+
+Text HLabel 2550 2750 0    50   BiDi ~ 0
+J1850_BUS-
+$Comp
+L PESD2CAN_215:PESD2CAN,215 D_ESD_?
+U 1 1 5FA41EFD
+P 3000 3450
+AR Path="/5F95F80B/5FAEE035/5FA41EFD" Ref="D_ESD_?"  Part="1" 
+AR Path="/5F95F80B/5FB34A7C/5FA41EFD" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA41EFD" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FA26E74/5FA41EFD" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA41EFD" Ref="D_ESD_1"  Part="1" 
+F 0 "D_ESD_1" V 2954 3680 50  0000 L CNN
+F 1 "PESD2CAN,215" V 3045 3680 50  0000 L CNN
+F 2 "footprints:SOT95P230X110-3N" H 3000 3450 50  0001 L BNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESD2CAN.pdf" H 3000 3450 50  0001 L BNN
+F 4 "PESD2CAN,215" H 3000 3450 50  0001 C CNN "Part Name"
+F 5 "DigiKey Canada" H 3000 3450 50  0001 C CNN "Vendor"
+F 6 "Nexperia USA Inc." H 3000 3450 50  0001 C CNN "Manufacturer"
+F 7 "1727-3891-1-ND" H 3000 3450 50  0001 C CNN "digikeypn"
+	1    3000 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA41F03
+P 3000 4300
+AR Path="/5F95F80B/5FAEE035/5FA41F03" Ref="#PWR?"  Part="1" 
+AR Path="/5F95F80B/5FB34A7C/5FA41F03" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA41F03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA41F03" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA41F03" Ref="#PWR074"  Part="1" 
+F 0 "#PWR074" H 3000 4050 50  0001 C CNN
+F 1 "GND" H 3005 4127 50  0000 C CNN
+F 2 "" H 3000 4300 50  0001 C CNN
+F 3 "" H 3000 4300 50  0001 C CNN
+	1    3000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3850 3000 4300
+Wire Wire Line
+	2550 1950 3100 1950
+Wire Wire Line
+	2550 2050 2900 2050
+Wire Wire Line
+	2550 2150 4150 2150
+Wire Wire Line
+	3950 2250 2550 2250
+Wire Wire Line
+	2550 2350 4950 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5FA8DC46
+P 5800 3050
+AR Path="/5F95F80B/5FB3FEAD/5FA8DC46" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA8DC46" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA8DC46" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA8DC46" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 5800 2800 50  0001 C CNN
+F 1 "GND" H 5805 2877 50  0000 C CNN
+F 2 "" H 5800 3050 50  0001 C CNN
+F 3 "" H 5800 3050 50  0001 C CNN
+	1    5800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2450 6450 2450
+Wire Wire Line
+	2550 2550 6250 2550
+Wire Wire Line
+	2550 2650 7450 2650
+Wire Wire Line
+	2550 2750 7250 2750
+Wire Wire Line
+	4950 2350 4950 3050
+Wire Wire Line
+	5150 3050 5800 3050
+Wire Wire Line
+	6250 2550 6250 3050
+Wire Wire Line
+	6450 2450 6450 3050
+Wire Wire Line
+	7250 2750 7250 3050
+Wire Wire Line
+	7450 2650 7450 3050
+Wire Wire Line
+	4150 2150 4150 3050
+Wire Wire Line
+	3950 2250 3950 3050
+Wire Wire Line
+	3100 1950 3100 3050
+Wire Wire Line
+	2900 2050 2900 3050
+Wire Notes Line
+	2700 2950 2700 4750
+Wire Notes Line
+	8150 4750 8150 2950
+Wire Notes Line
+	8150 2950 2700 2950
+Wire Notes Line
+	2700 4750 8150 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5FA8DC3E
+P 4050 4300
+AR Path="/5F95F80B/5FAEE035/5FA8DC3E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA8DC3E" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA8DC3E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA8DC3E" Ref="#PWR077"  Part="1" 
+F 0 "#PWR077" H 4050 4050 50  0001 C CNN
+F 1 "GND" H 4055 4127 50  0000 C CNN
+F 2 "" H 4050 4300 50  0001 C CNN
+F 3 "" H 4050 4300 50  0001 C CNN
+	1    4050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBZ27VALT3G:MMBZ27VALT3G D_ESD_?
+U 1 1 5FA8DC3F
+P 6350 3350
+AR Path="/5F95F80B/5FB3FEAD/5FA8DC3F" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA8DC3F" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FA26E74/5FA8DC3F" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA8DC3F" Ref="D_ESD_4"  Part="1" 
+F 0 "D_ESD_4" V 6354 3530 50  0000 L CNN
+F 1 "MMBZ27VALT3G" V 6445 3530 50  0000 L CNN
+F 2 "SOT95P237X111-3N" H 6350 3350 50  0001 L BNN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBZ5V6ALT1-D.PDF" H 6350 3350 50  0001 L BNN
+F 4 "20" H 6350 3350 50  0001 L BNN "Field4"
+F 5 "IPC-7351B" H 6350 3350 50  0001 L BNN "Field5"
+F 6 "ON Semiconductor" H 6350 3350 50  0001 L BNN "Field6"
+F 7 "MMBZ27VALT3G" H 6350 3350 50  0001 C CNN "Part Name"
+F 8 "DigiKey Canada" H 6350 3350 50  0001 C CNN "Vendor"
+F 9 "ON Semiconductor" H 6350 3350 50  0001 C CNN "Manufacturer"
+F 10 "MMBZ27VALT3GOSCT-ND" H 6350 3350 50  0001 C CNN "digikeypn"
+	1    6350 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA2A1AE
+P 6350 4300
+AR Path="/5F95F80B/5FB3FEAD/5FA2A1AE" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA2A1AE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA2A1AE" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA2A1AE" Ref="#PWR080"  Part="1" 
+F 0 "#PWR080" H 6350 4050 50  0001 C CNN
+F 1 "GND" H 6355 4127 50  0000 C CNN
+F 2 "" H 6350 4300 50  0001 C CNN
+F 3 "" H 6350 4300 50  0001 C CNN
+	1    6350 4300
+	1    0    0    -1  
+$EndComp
+Text Notes 4050 4700 0    50   ~ 0
+ESD Protection (IEC61000-4-2 Level 4)
+$Comp
+L power:GND #PWR?
+U 1 1 5FA2A1B8
+P 7350 4300
+AR Path="/5F95F80B/5FA83833/5FA2A1B8" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA2A1B8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA2A1B8" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA2A1B8" Ref="#PWR082"  Part="1" 
+F 0 "#PWR082" H 7350 4050 50  0001 C CNN
+F 1 "GND" H 7355 4127 50  0000 C CNN
+F 2 "" H 7350 4300 50  0001 C CNN
+F 3 "" H 7350 4300 50  0001 C CNN
+	1    7350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBZ27VALT3G:MMBZ27VALT3G D_ESD_?
+U 1 1 5FA2A1C1
+P 7350 3350
+AR Path="/5F95F80B/5FA83833/5FA2A1C1" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA2A1C1" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FA26E74/5FA2A1C1" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA2A1C1" Ref="D_ESD_5"  Part="1" 
+F 0 "D_ESD_5" V 7354 3530 50  0000 L CNN
+F 1 "MMBZ27VALT3G" V 7445 3530 50  0000 L CNN
+F 2 "SOT95P237X111-3N" H 7350 3350 50  0001 L BNN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBZ5V6ALT1-D.PDF" H 7350 3350 50  0001 L BNN
+F 4 "20" H 7350 3350 50  0001 L BNN "Field4"
+F 5 "IPC-7351B" H 7350 3350 50  0001 L BNN "Field5"
+F 6 "ON Semiconductor" H 7350 3350 50  0001 L BNN "Field6"
+F 7 "MMBZ27VALT3G" H 7350 3350 50  0001 C CNN "Part Name"
+F 8 "DigiKey Canada" H 7350 3350 50  0001 C CNN "Vendor"
+F 9 "ON Semiconductor" H 7350 3350 50  0001 C CNN "Manufacturer"
+F 10 "MMBZ27VALT3GOSCT-ND" H 7350 3350 50  0001 C CNN "digikeypn"
+	1    7350 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L MMBZ27VCLFHT116:MMBZ27VCLFHT116 D_ESD_?
+U 1 1 5FA2A1C7
+P 5000 2450
+AR Path="/5F95F80B/5FBCBEA5/5FA2A1C7" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA2A1C7" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FA26E74/5FA2A1C7" Ref="D_ESD_?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA2A1C7" Ref="D_ESD_3"  Part="1" 
+F 0 "D_ESD_3" V 5897 2680 60  0000 L CNN
+F 1 "MMBZ27VCLFHT116" V 6003 2680 60  0000 L CNN
+F 2 "footprints:MMBZ27VCLFHT116" H 5800 2690 60  0001 C CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/diode/zener/mmbz27vclfht116-e.pdf" V 6056 2680 60  0001 L CNN
+F 4 "MMBZ27VCLFHT116" H 5000 2450 50  0001 C CNN "Part Name"
+F 5 "DigiKey Canada" H 5000 2450 50  0001 C CNN "Vendor"
+F 6 "Rohm Semiconductor" H 5000 2450 50  0001 C CNN "Manufacturer"
+F 7 "MMBZ27VCLFHT116CT-ND" H 5000 2450 50  0001 C CNN "digikeypn"
+	1    5000 2450
+	0    1    1    0   
+$EndComp
+Text HLabel 2550 1950 0    50   BiDi ~ 0
+HS_CAN_High
+Text HLabel 2550 2050 0    50   BiDi ~ 0
+HS_CAN_Low
+Text HLabel 2550 2150 0    50   BiDi ~ 0
+MS_CAN_High
+Text HLabel 2550 2250 0    50   BiDi ~ 0
+MS_CAN_Low
+Text HLabel 2550 2350 0    50   BiDi ~ 0
+SW_CAN
+Text HLabel 2550 2450 0    50   BiDi ~ 0
+K-Line
+Text HLabel 2550 2550 0    50   BiDi ~ 0
+L-Line
+Text HLabel 2550 2650 0    50   BiDi ~ 0
+J1850_BUS+
+Text HLabel 2550 2750 0    50   BiDi ~ 0
+J1850_BUS-
+$Comp
+L power:GND #PWR?
+U 1 1 5FA8DC45
+P 3000 4300
+AR Path="/5F95F80B/5FAEE035/5FA8DC45" Ref="#PWR?"  Part="1" 
+AR Path="/5F95F80B/5FB34A7C/5FA8DC45" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA8DC45" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA8DC45" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA8DC45" Ref="#PWR075"  Part="1" 
+F 0 "#PWR075" H 3000 4050 50  0001 C CNN
+F 1 "GND" H 3005 4127 50  0000 C CNN
+F 2 "" H 3000 4300 50  0001 C CNN
+F 3 "" H 3000 4300 50  0001 C CNN
+	1    3000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA4B17D
+P 5800 3050
+AR Path="/5F95F80B/5FB3FEAD/5FA4B17D" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA4B17D" Ref="#PWR?"  Part="1" 
+AR Path="/5FA26E74/5FA4B17D" Ref="#PWR?"  Part="1" 
+AR Path="/5FF6FE24/5FA6BC58/5FA4B17D" Ref="#PWR078"  Part="1" 
+F 0 "#PWR078" H 5800 2800 50  0001 C CNN
+F 1 "GND" H 5805 2877 50  0000 C CNN
+F 2 "" H 5800 3050 50  0001 C CNN
+F 3 "" H 5800 3050 50  0001 C CNN
+	1    5800 3050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
